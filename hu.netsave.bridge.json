@@ -1,0 +1,11 @@
+{
+  "name": "hu.netsave.bridge",
+  "description": "Opera QuickSave Bridge",
+  "path": "C:\\Program Files\\Python312\\python.exe",
+  "args": ["C:\\Users\\Zoli\\Documents\\opera_quicksave\\python_bridge\\bridge.py"],
+  "type": "stdio",
+  "allowed_origins": [
+     "chrome-extension://mdcjdijibedpjfkhbnhmehioogiedhma/"
+  ]
+}
+

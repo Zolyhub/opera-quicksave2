@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "Opera QuickSave",
+  "version": "1.0",
+  "description": "Quick save URLs, screenshots, images, videos, PDF from any page.",
+  "permissions": [
+    "scripting",
+    "activeTab",
+    "nativeMessaging"
+  ],
+  "host_permissions": ["<all_urls>"],
+  "background": {
+    "service_worker": "background.js"
+  },
+"content_scripts": [
+  {
+    "matches": ["http://*/*", "https://*/*"],
+    "js": ["content_script.js"],
+    "css": ["content_script.css"]
+  }
+],
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  }
+}
